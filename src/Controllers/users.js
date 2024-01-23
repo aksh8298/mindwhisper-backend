@@ -12,9 +12,8 @@ exports.register = async (req, res) => {
         })
 
         _user.save().then(newUser => {
-            return res.status(201).json({ message: "Account Created Succesfully" })
-        })
-            .catch(error => {
+           
+        }). catch(error => {
                 return res.status(400).json({ message: "Error occured", error })
 
             })
